@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 Created on Mon Aug 13 20:08:02 2018
 
@@ -16,8 +15,12 @@ Only 3 words for filling in grid are allowed in present API
 from flask import Flask
 from flask import request, jsonify
 import requests
-import Model.word_list as word_list
+
+import sys
+sys.path.append("C:/Users/mphat/Documents/WordGridSearch/API/Model")
 import Model.WordGrid as WordGrid
+import Model.word_list as word_list 
+
 
 app = Flask(__name__)
 app.config["DEBUG"]=True
