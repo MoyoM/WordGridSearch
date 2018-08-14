@@ -130,8 +130,9 @@ pose an interesting problem here worth exploring. Optimising these dynamically m
 
 
 Usage of implementation models
+------------------------------
 
-a) Generating list of words to fill up a given percentage of the grid
+**a) Generating list of words to fill up a given percentage of the grid**
 
 https://github.com/MoyoM/WordGridSearch/blob/master/Notebooks/word_list_generation.ipynb
 https://github.com/MoyoM/WordGridSearch/blob/master/API/Model/word_list.py
@@ -140,20 +141,20 @@ The juypter notebook and python module above allow a user to generate  a list of
 SAMPLED WITH REPLACEMENT, to fill a given percentage of an N X N grid (Word Density, x%) where N is 
 the dimension of the grid.
 
-A user suggests k words to be entered in the grid.**Note the API implementation is designed to handle 3,
+A user suggests k words to be entered in the grid. **Note the API implementation is designed to handle 3,
 it receives 3 words from a client**. However, the scripts can take any k words. The k words are resampled 
 to produce a longer array. An algorithm is used to select the best susbet from this array that gives
 a sum of word lengths equivalent to the required Word Density (x%). This sub array of words is 
 printed out and is available from a call function to use in methods that fill up a grid with the
 given words in the sub array.
 
-b) Creating a grid with known English words in it
+**b) Creating a grid with known English words in it**
 
 https://github.com/MoyoM/WordGridSearch/word_grid.ipynb
 https://github.com/MoyoM/WordGridSearch/blob/master/API/Model/WordGrid.py
 
 The jupyter notebook and python modules above allow the user to generate a grid with knwon English words
-placed at random points in the grid, and placed at random in 3 directions Horizontallly, Vertically and 
+placed at random points in the grid, and placed at random in 3 directions Horizontally, Vertically and 
 Diagonally.
 
 The sub array of words filling a given Word Density (x%) from (a) is placed in an empty word grid with
@@ -166,4 +167,17 @@ word grid.
 
 A further method searches for the location and direction of given words and returns data on this.
 
+**c) REST API**
+
+https://github.com/MoyoM/WordGridSearch/blob/master/API/wordgrid_serve_api.py
+
+The above module is used to create a FLASK API that receives **three** English words to place
+in given N * N grid with a given Word Density (x%) and given probabilities for Horizontal, Vertical 
+and Diagonal placement from the Client-Server.
+
+The API is still work in progress, 
+i) On the Model Server, python relative  paths need fixed to allow the module to run on any machine. 
+Currently there is an absolute reference to a local path for one of the modules.
+ii) Handling of requests by the Model-Server is still to be tested using Postman
+ii) The client Server is still to be built.
 
