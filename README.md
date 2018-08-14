@@ -78,8 +78,9 @@ The code structure is presented. More effort will be required to stepwise test a
 Postman Client Server side.
 
 
+-------------------------
 Comments on the following:
-
+-------------------------
 
 Complexity of the search algorithm with N and grid dimension (1D, 2D, 3D...)?
 
@@ -105,3 +106,5 @@ that of a 2D array.
 
 What are some of the alternate solutions of the search problem worth exploring?
 Anything else that you suggest that will make this problem/solution more interesting?
+
+
