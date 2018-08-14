@@ -46,10 +46,12 @@ The output of this program for the example grid:
 Implemented solution
 ------------------------------------------------
 a) Juypter notebooks
-The implemented solutions are in this repository
+
+The implemented solutions are in these jupyter notebooks
 
 Stage 1: 2D GRID OF ENGLISH ALPHABETS -
 https://github.com/MoyoM/WordGridSearch/blob/master/Notebooks/word_list_generation.ipynb
+https://github.com/MoyoM/WordGridSearch/word_grid.ipynb
 
 Stage 2: SEARCH ENGLISH WORDS IN A 2D GRID - 
 https://github.com/MoyoM/WordGridSearch/word_grid.ipynb
@@ -59,6 +61,7 @@ are presented at the end of each notebook.
 
 
 b) Python Modules for REST API implementation
+
 The implemented solution modules for an API productionization are in thee modules
 
 Stage 1: 2D GRID OF ENGLISH ALPHABETS - 
@@ -71,7 +74,8 @@ https://github.com/MoyoM/WordGridSearch/blob/master/API/Model/WordGrid.py
 This has the Class implementation for bonus points, and search algorithms as methods of this class.
 
 
-REST API
+c) REST API
+
 https://github.com/MoyoM/WordGridSearch/blob/master/API/wordgrid_serve_api.py
 
 The model server side of the API is created in this code. The code addresses parametisation by N (Grid Size),
