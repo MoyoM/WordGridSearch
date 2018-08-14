@@ -47,12 +47,12 @@ The output of this program for the example grid:
 implemented solution
 ------------------------------------------------
 a) Juypter notebooks
-The implemented solution are in this repository
-Stage 1: 2D GRID OF ENGLISH ALPHABETS - https://github.com/MoyoM/WordGridSearch/word_grid.ipynb
+The implemented solutions are in this repository
+Stage 1: 2D GRID OF ENGLISH ALPHABETS - https://github.com/MoyoM/WordGridSearch/blob/master/Notebooks/word_list_generation.ipynb
+
 Stage 2: SEARCH ENGLISH WORDS IN A 2D GRID - https://github.com/MoyoM/WordGridSearch/word_grid.ipynb
 
-The Jupyter Notebooks allow interactive testing of the functionality created in this project. Test data and test runs are presented at the end
-of each notebook
+The Jupyter Notebooks allow interactive testing of the functionality created in this project. Test data and test runs are presented at the end of each notebook
 
 
 b) Python Modules
