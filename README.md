@@ -63,12 +63,14 @@ The implemented solution modules for an API productionizatio are in this reposit
 Stage 1: 2D GRID OF ENGLISH ALPHABETS - 
 https://github.com/MoyoM/WordGridSearch/blob/master/API/Model/word_list.py ;
 https://github.com/MoyoM/WordGridSearch/blob/master/API/Model/WordGrid.py
+
 Stage 2: SEARCH ENGLISH WORDS IN A 2D GRID -
 https://github.com/MoyoM/WordGridSearch/blob/master/API/Model/WordGrid.py
 This has the Class implementation for bonus points.
 
 REST API
 https://github.com/MoyoM/WordGridSearch/blob/master/API/wordgrid_serve_api.py
+
 The model server side of the API is created in this code. The code addresses parametisation by N (Grid Size),
 x% (Word Density) and P (Orientation probabilities).
 
