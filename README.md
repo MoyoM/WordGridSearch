@@ -2,8 +2,7 @@
 -------------------------
 About this Project
 -------------------------
-This project presents a coding solution for implementing alogorithms to create a word grid and to search for give words in that grid in answe to to
-the problem statetement below.
+This project presents a coding solution for implementing algorithms to create a word grid and to search for given words in that grid in answer to the problem statetement below.
 
 -------------------------
 Problem Statement:
@@ -55,18 +54,18 @@ Stage 2: SEARCH ENGLISH WORDS IN A 2D GRID -
 https://github.com/MoyoM/WordGridSearch/word_grid.ipynb
 
 The Jupyter Notebooks allow interactive testing of the functionality created in this project. Test data and test runs
-are presented at the end of each notebook
+are presented at the end of each notebook.
 
 
 b) Python Modules for REST API implementation
-The implemented solution modules for an API productionizatio are in this repository
+The implemented solution modules for an API productionization are in thee modules
 Stage 1: 2D GRID OF ENGLISH ALPHABETS - 
 https://github.com/MoyoM/WordGridSearch/blob/master/API/Model/word_list.py ;
 https://github.com/MoyoM/WordGridSearch/blob/master/API/Model/WordGrid.py
 
 Stage 2: SEARCH ENGLISH WORDS IN A 2D GRID -
 https://github.com/MoyoM/WordGridSearch/blob/master/API/Model/WordGrid.py
-This has the Class implementation for bonus points.
+This has the Class implementation for bonus points, and search algorithms as methods of this class.
 
 REST API
 https://github.com/MoyoM/WordGridSearch/blob/master/API/wordgrid_serve_api.py
@@ -77,6 +76,9 @@ x% (Word Density) and P (Orientation probabilities).
 The code structure is presented. More effort will be required to stepwise test and amke this work by implementinga
 Postman Client Server side.
 
+Another note I had problems with importing my own modules into this module. I set a python path to one module.
+Please note this path set up in this code is to my local folder and may cause the code to fail run anywhere else. 
+Setting up this properly and understanding python absolute and relative paths for importing is an immediate goal.
 
 -------------------------
 Comments on the following:
@@ -85,7 +87,7 @@ Comments on the following:
 Complexity of the search algorithm with N and grid dimension (1D, 2D, 3D...)?
 
 The agorithm used here starts on a coordinate (x,y) and searches in d directions
-for the word.The algorithm is linear on O(1) the cost of locating one letter in the grid for 
+for the word. The algorithm is linear on O(1), the cost of locating one letter in the grid for 
 a 2D array. The cost on time for n words of length w searched for in d directions will be O(nwd).
 
 N
@@ -94,9 +96,9 @@ So as N increases the algorithm cost will increase linearly with increase in N. 
 as grid size, therefore N start positions need to be initiated. For bigger N compared to O(1) 
 more positions are initiated. 
 
-However a an improvisation of the algorithm can search for the first letter of a word first and then 
+However an improvisation of the algorithm can search for the first letter of a word first and then 
 seach for the word. Though still linear it should be less than O(nwd). Typically it could
-be O(n) {first letter search) + O(wd) {word length in d directions)
+be O(n) {first letter search) + O(wd) {word length in d directions).
 
 3D
 
@@ -113,10 +115,10 @@ The alternate solutions worth exploring from the way I implemented the solutions
 a) finding a starting letter first before searching for a word in a given direction.
 This should decrease the search time for the algorithm.
 
-b) Trying a two letter search in any direction first. This is one strategy crossword user to locate 
-words. I wonder if this wil cost more intially compared to a O(2n) first two letters, but
-focuses search quickly has less false lengthy seraches in wrong directions  i.e truncates
-O(w) {word cost} quickly.
+b) Trying a two letter search in any direction first. This is one strategy crossword players
+use to locate words. I wonder if this wil cost more intially compared to searching
+for first letter first ( O(2n) > O(n) ). However it focuses the search quickly has less false
+lengthy searches in wrong directions  i.e. truncates O(w) {word cost} quickly.
 
 c) Snake puzzle problem - searching for words in a given neigbourhood. In an n * n matrix, the goal
 will be to find  words in n_l * n_l neigbourhoods where n_l < N. Neighbourhood definitions may 
