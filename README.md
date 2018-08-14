@@ -43,7 +43,7 @@ The output of this program for the example grid:
 'MONKEY' Found at (0, 4) in Diagonal direction
 
 ------------------------------------------------
-implemented solution
+Implemented solution
 ------------------------------------------------
 a) Juypter notebooks
 The implemented solutions are in this repository
