@@ -91,9 +91,11 @@ a 2D array. The cost on time for n words of length w searched for in d direction
 N
 
 So as N increases the algorithm cost will increase linearly with increase in N. Here N is taken 
-as grid size, there N start positions initiaited in bigger N compared to O(1) are initiated.
+as grid size, therefore N start positions need to be initiated. For bigger N compared to O(1) 
+more positions are initiated. 
+
 However a an improvisation of the algorithm can search for the first letter of a word first and then 
-seach for the word. Though still linear it should be less than O(nwd) typically it could
+seach for the word. Though still linear it should be less than O(nwd). Typically it could
 be O(n) {first letter search) + O(wd) {word length in d directions)
 
 3D
@@ -106,5 +108,21 @@ that of a 2D array.
 
 What are some of the alternate solutions of the search problem worth exploring?
 Anything else that you suggest that will make this problem/solution more interesting?
+
+The alternate solutions worth exploring from the way I implemented the solutions are
+a) finding a starting letter first before searching for a word in a given direction.
+This should decrease the search time for the algorithm.
+
+b) Trying a two letter search in any direction first. This is one strategy crossword user to locate 
+words. I wonder if this wil cost more intially compared to a O(2n) first two letters, but
+focuses search quickly has less false lengthy seraches in wrong directions  i.e truncates
+O(w) {word cost} quickly.
+
+c) Snake puzzle problem - searching for words in a given neigbourhood. In an n * n matrix, the goal
+will be to find  words in n_l * n_l neigbourhoods where n_l < N. Neighbourhood definitions may 
+pose an interesting problem here worth exploring. Optimising these dynamically may be explored.
+
+
+
 
 
