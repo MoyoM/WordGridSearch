@@ -77,9 +77,31 @@ x% (Word Density) and P (Orientation probabilities).
 The code structure is presented. More effort will be required to stepwise test and amke this work by implementinga
 Postman Client Server side.
 
+
 Comments on the following:
 
 
 Complexity of the search algorithm with N and grid dimension (1D, 2D, 3D...)?
+
+The agorithm used here starts on a coordinate (x,y) and searches in d directions
+for the word.The algorithm is linear on O(1) the cost of locating one letter in the grid for 
+a 2D array. The cost on time for n words of length w searched for in d directions will be O(nwd).
+
+N
+
+So as N increases the algorithm cost will increase linearly with increase in N. Here N is taken 
+as grid size, there N start positions initiaited in bigger N compared to O(1) are initiated.
+However a an improvisation of the algorithm can search for the first letter of a word first and then 
+seach for the word. Though still linear it should be less than O(nwd) typically it could
+be O(n) {first letter search) + O(wd) {word length in d directions)
+
+3D
+
+Since a 3D array is an array of 2D arrays (array size [n1][n2][n3] is n3 of [n1][n2] arrays)
+The cost for a 3D array compared to a 2D array should be n(O(nwd)). The cost increases n times
+that of a 2D array.
+
+
+
 What are some of the alternate solutions of the search problem worth exploring?
 Anything else that you suggest that will make this problem/solution more interesting?
