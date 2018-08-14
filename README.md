@@ -62,6 +62,7 @@ The Jupyter Notebooks allow interactive testing of the functionality created in 
 are presented at the end of each notebook.
 
 
+
 b) Python Modules for REST API implementation
 
 The implemented solution modules for an API productionization are in thee modules
@@ -76,6 +77,7 @@ Stage 2: SEARCH ENGLISH WORDS IN A 2D GRID -
 https://github.com/MoyoM/WordGridSearch/blob/master/API/Model/WordGrid.py
 
 This has the Class implementation for bonus points, and search algorithms as methods of this class.
+
 
 
 c) REST API
@@ -185,8 +187,11 @@ in given N * N grid with a given Word Density (x%) and given probabilities for H
 and Diagonal placement from the Client-Server.
 
 The API is still work in progress, 
+
 i) On the Model Server, python relative  paths need to be fixed to allow the module to run on any machine. 
 Currently there is an absolute reference to a local path for one of the modules.
+
 ii) Handling of requests by the Model-Server is still to be tested using Postman
+
 ii) The client Server is still to be built.
 
