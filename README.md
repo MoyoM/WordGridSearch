@@ -45,7 +45,7 @@ The output of this program for the example grid:
 ------------------------------------------------
 Implemented solution
 ------------------------------------------------
-a) Juypter notebooks
+**a) Juypter notebooks**
 
 The implemented solutions are in these jupyter notebooks
 
@@ -63,7 +63,7 @@ are presented at the end of each notebook.
 
 
 
-b) Python Modules for REST API implementation
+**b) Python Modules for REST API implementation**
 
 The implemented solution modules for an API productionization are in thee modules
 
@@ -80,7 +80,7 @@ This has the Class implementation for bonus points, and search algorithms as met
 
 
 
-c) REST API
+**c) REST API**
 
 https://github.com/MoyoM/WordGridSearch/blob/master/API/wordgrid_serve_api.py
 
@@ -94,6 +94,7 @@ Another note, I had problems with importing my own modules into this module. I s
 fix this. Please note the path set up in this code is to my local folder and may cause the code to fail when
 run anywhere else. Setting up this properly and understanding python absolute and relative paths for importing 
 is an immediate goal.
+
 
 -------------------------
 Comments on the following:
@@ -137,9 +138,10 @@ less false full length searches in wrong directions, i.e. it truncates O(w) {wor
 
 c) Snake puzzle problem - searching for words in a given neigbourhood. In an n * n matrix, the goal
 will be to find  words in n_l * n_l neigbourhoods where n_l < N. Neighbourhood definitions may 
-pose an interesting problem here worth exploring. Optimising these dynamically may be explored.
+pose an interesting problem here worth exploring. Optimising these dynamically may be explored
 
 
+-------------------------------
 Usage of implementation models
 ------------------------------
 
