@@ -50,10 +50,12 @@ a) Juypter notebooks
 The implemented solutions are in these jupyter notebooks
 
 Stage 1: 2D GRID OF ENGLISH ALPHABETS -
+
 https://github.com/MoyoM/WordGridSearch/blob/master/Notebooks/word_list_generation.ipynb
 https://github.com/MoyoM/WordGridSearch/word_grid.ipynb
 
 Stage 2: SEARCH ENGLISH WORDS IN A 2D GRID - 
+
 https://github.com/MoyoM/WordGridSearch/word_grid.ipynb
 
 The Jupyter Notebooks allow interactive testing of the functionality created in this project. Test data and test runs
@@ -65,10 +67,12 @@ b) Python Modules for REST API implementation
 The implemented solution modules for an API productionization are in thee modules
 
 Stage 1: 2D GRID OF ENGLISH ALPHABETS - 
+
 https://github.com/MoyoM/WordGridSearch/blob/master/API/Model/word_list.py ;
 https://github.com/MoyoM/WordGridSearch/blob/master/API/Model/WordGrid.py
 
 Stage 2: SEARCH ENGLISH WORDS IN A 2D GRID -
+
 https://github.com/MoyoM/WordGridSearch/blob/master/API/Model/WordGrid.py
 
 This has the Class implementation for bonus points, and search algorithms as methods of this class.
@@ -78,15 +82,16 @@ c) REST API
 
 https://github.com/MoyoM/WordGridSearch/blob/master/API/wordgrid_serve_api.py
 
-The model server side of the API is created in this code. The code addresses parametisation by N (Grid Size),
+The Model-Server side of the API is created in this code. The code addresses parametisation by N (Grid Size),
 x% (Word Density) and P (Orientation probabilities).
 
-The code structure is presented. More effort will be required to stepwise test and amke this work by implementing a
-Postman Client Server side.
+The code structure is presented. More effort will be required to stepwise test and make the API work by
+implementing a Postman Client-Server side.
 
-Another note I had problems with importing my own modules into this module. I set a python path to one module.
-Please note this path set up in this code is to my local folder and may cause the code to fail run anywhere else. 
-Setting up this properly and understanding python absolute and relative paths for importing is an immediate goal.
+Another note, I had problems with importing my own modules into this module. I set a python path to one module to
+fix this. Please note the path set up in this code is to my local folder and may cause the code to fail when
+run anywhere else. Setting up this properly and understanding python absolute and relative paths for importing 
+is an immediate goal.
 
 -------------------------
 Comments on the following:
@@ -125,8 +130,8 @@ This should decrease the search time for the algorithm.
 
 b) Trying a two letter search in any direction first. This is one strategy crossword players
 use to locate words. I wonder if this wil cost more intially compared to searching
-for first letter first ( O(2n) > O(n) ). However it focuses the search quickly has less false
-lengthy searches in wrong directions  i.e. truncates O(w) {word cost} quickly.
+for first letter first ( O(2n) > O(n) ). However it focuses the search quickly  and therefore has
+less false full length searches in wrong directions, i.e. it truncates O(w) {word cost} quickly.
 
 c) Snake puzzle problem - searching for words in a given neigbourhood. In an n * n matrix, the goal
 will be to find  words in n_l * n_l neigbourhoods where n_l < N. Neighbourhood definitions may 
@@ -142,8 +147,8 @@ https://github.com/MoyoM/WordGridSearch/blob/master/Notebooks/word_list_generati
 https://github.com/MoyoM/WordGridSearch/blob/master/API/Model/word_list.py
 
 The juypter notebook and python module above allow a user to generate  a list of words,
-SAMPLED WITH REPLACEMENT, to fill a given percentage of an N X N grid (Word Density, x%) where N is 
-the dimension of the grid.
+SAMPLED WITH REPLACEMENT, to fill a given percentage (Word Density, x%) of an N X N grid, 
+where N is the dimension of the grid.
 
 A user suggests k words to be entered in the grid. **Note the API implementation is designed to handle 3,
 it receives 3 words from a client**. However, the scripts can take any k words. The k words are resampled 
@@ -180,7 +185,7 @@ in given N * N grid with a given Word Density (x%) and given probabilities for H
 and Diagonal placement from the Client-Server.
 
 The API is still work in progress, 
-i) On the Model Server, python relative  paths need fixed to allow the module to run on any machine. 
+i) On the Model Server, python relative  paths need to be fixed to allow the module to run on any machine. 
 Currently there is an absolute reference to a local path for one of the modules.
 ii) Handling of requests by the Model-Server is still to be tested using Postman
 ii) The client Server is still to be built.
